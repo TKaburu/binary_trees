@@ -3,16 +3,15 @@
 /**
  * binary_tree_delete - This function deletes a Tree
  * @tree: This is a pointer to the root node of the tree
- * 
-*/
+ *
+ */
 
 void binary_tree_delete(binary_tree_t *tree)
 {
-    
-    if (tree == NULL)
-        return;
+	if (tree == NULL)
+		return;
 
-    binary_tree_delete(tree->left);
-    binary_tree_delete(tree->right);
-    free(tree);
+	binary_tree_delete(tree->left);
+	binary_tree_delete(tree->right);
+	free(tree);
 }
