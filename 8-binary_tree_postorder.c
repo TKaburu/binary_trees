@@ -4,7 +4,7 @@
  * binary_tree_postorder - This function trasvers a Tree with Postorder method
  * @tree: This is a pointer to the root node
  * @func: This is a pointer to the function called on all nodes
- * 
+ *
  */
 
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
